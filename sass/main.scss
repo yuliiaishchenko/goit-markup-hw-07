@@ -1,0 +1,7 @@
+@import './utils.scss/variables.scss';
+
+body {
+    background:  $fon-text-color;
+    color:  $primary-text-color;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;}
