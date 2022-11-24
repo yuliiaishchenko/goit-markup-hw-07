@@ -1,10 +1,42 @@
 @import './components.scss/page-header';
 @import './utils.scss/variables.scss';
+@import'./components.scss/hero';
+@import'./utils.scss/placeholders';
+@import'./components.scss/hero-titles';
+@import'./components.scss/modal';
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+header {
+    letter-spacing: 0.02em;}
+   
+a {
+       text-decoration: none;}
+   
+h1,h2,h3,p,ul {
+           margin: 0;}   
+
+ul {
+            margin-bottom: 0;
+            margin-top: 0;
+            list-style: none;
+            padding-left: 0%;
+            padding-right: 0%;}
 
 footer{
     background: $bg-color;
     color: $fon-text-color;
     padding-top: 60px;
     padding-bottom: 60px;}
-    
+
+.section { 
+      color: $primary-text-color;
+      padding-top: 94px;
+      padding-bottom: 94px; } 
+
+.container {
+  @extend %container;
+}
