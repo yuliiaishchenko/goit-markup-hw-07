@@ -567,6 +567,94 @@ textarea {
   color: #FFFFFF;
 }
 
+.team-section {
+  color: #212121;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #F5F4FA;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-padding-start: 0%;
+          padding-inline-start: 0%;
+}
+.team__list__item {
+  background-color: #FFFFFF;
+  margin-right: 30px;
+  width: calc((100% - 90px) / 4);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.team__list__item:nth-child(4n) {
+  margin-right: 0%;
+}
+.team__list__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__list__title {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.team__list__text {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+}
+.team-social-list__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-list__links:hover, .team-social-list__links:focus {
+  background-color: #2196F3;
+}
+.team-social-list__icon {
+  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-list__links:hover .team-social-list__icon, .team-social-list__links:focus .team-social-list__icon {
+  fill: #FFFFFF;
+}
+
 *,
 *::before,
 *::after {
