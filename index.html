@@ -17,7 +17,7 @@
     <header class="page-header">  
         <div class="container-nav">
         <nav class="logo-nav">           
-            <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
+            <a href="./index.html" class="logo-nav__link"><span class="logo-nav__accent">Web</span>Studio</a>
             
             <ul class="site-nav ">
                 <li class="site-nav__item">
@@ -30,15 +30,15 @@
         </nav>
         <div class="site-auth-nav">
             <ul class="auth-nav">
-                <li class="flex-nav">
-                    <a  href="mailto:info@devstudio.com" class="link">
-                    <svg class="flex-icon" width="16px" height="12px">
+                <li class="auth-nav__item">
+                    <a  href="mailto:info@devstudio.com" class="auth-nav__link">
+                    <svg class="auth-nav__icon" width="16px" height="12px">
                         <use href="./images/sprite.svg#icon-envelope">
                         </svg> info@devstudio.com</a>
                 </li>
-                <li class="flex-nav"> 
-                    <a href="tel:+380961111111" class="link">
-                    <svg class="flex-icon" width="10px" height="16px">
+                <li class="auth-nav__item"> 
+                    <a href="tel:+380961111111" class="auth-nav__link">
+                    <svg class="auth-nav__icon" width="10px" height="16px">
                         <use href="./images/sprite.svg#icon-smartphone">
                         </svg>+380961111111</a>
                   </li>
@@ -50,44 +50,43 @@
     <main>
         <section class="hero">
             <div class="container">
-            <h1 class="hero-title">Ефективні рішення для <br /> вашого бізнесу</h1>
-            <div class="hero-button" data-modal-open><button type="button" class="button">Замовити послугу</button></div>
+            <h1 class="hero__title">Ефективні рішення для <br /> вашого бізнесу</h1>
+            <div class="hero__item" data-modal-open><button type="button" class="button hero__button">Замовити послугу</button></div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal" >
-                    <button  class="button-close" type="button" data-modal-close>
-                        
-                        <svg class="icon">
+                    <button  class="button-close modal__button-close" type="button" data-modal-close>  
+                        <svg class="modal__icon">
                             <use href="./images/sprite2.svg#icon-close-black">
                          </svg>
                     </button>
                     <form class="form-hero">
-                        <p class="form-hero-text">Залиште свої дані, ми вам передзвонимо</p>
-                        <div role="group" class="label-group">
-                        <label class="hero-label"><span>Ім'я</span>
-                            <div class="div-input"><input type="text" name="name" class="hero-input"/>
-                            <svg class="input-svg">
+                        <p class="form-hero__text">Залиште свої дані, ми вам передзвонимо</p>
+                        <div role="group" class="form-hero__group">
+                        <label class="form-hero__label"><span>Ім'я</span>
+                            <div class="form-hero__div"><input type="text" name="name" class="form-hero__input"/>
+                            <svg class="form-hero__icon">
                                 <use href="./images/sprite.svg#icon-person-black-18dp-1">
                             </svg></div>
                             </label>
                            
-                        <label class="hero-label"><span>Телефон</span>
-                            <div class="div-input"><input type="tel" name="phone"class="hero-input"/>
-                            <svg class="input-svg">
+                        <label class="form-hero__label"><span>Телефон</span>
+                            <div class="form-hero__div"><input type="tel" name="phone"class="form-hero__input"/>
+                            <svg class="form-hero__icon">
                                 <use href="./images/sprite.svg#icon-phone-black-18dp-1">
                             </svg>
                             </div>
                         </label>
-                        <label class="hero-label"><span>Пошта</span>
-                            <div class="div-input">
+                        <label class="form-hero__label"><span>Пошта</span>
+                            <div class="form-hero__div">
                                 <input type="email" 
                                 name="email" 
-                                class="hero-input"/>
-                                <svg class="input-svg">
+                                class="form-hero__input"/>
+                                <svg class="form-hero__icon">
                                     <use href="./images/sprite.svg#icon-email-black-18dp-1">
                                 </svg>
                             </div>
                         </label>
-                        <label class="hero-label">Коментар<textarea
+                        <label class="form-hero__label">Коментар<textarea
                              class="hero-textarea" 
                              name="feedback" rows="5"
                              placeholder="Введіть текст"
@@ -96,13 +95,13 @@
                     </div>
                     
                         <label class="hero-checkbox">
-                            <input type="checkbox" name="policy" value="accept-policy" class="checkbox" />
-                            <span class="checkbox-span">
-                                <svg class="checkbox-svg">
+                            <input type="checkbox" name="policy" value="accept-policy" class="hero-checkbox__input" />
+                            <span class="hero-checkbox__checkbox">
+                                <svg class="hero-checkbox__icon">
                                     <use href="./images/sprite.svg#icon-Vector">
                                 </svg>
                             </span>
-                             <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href class="checkbox-link"> Умови договору</a></span>
+                             <span class="hero-checkbox__text">Погоджуюся з розсилкою та приймаю <a href class="checkbox-link"> Умови договору</a></span>
                             </label>
                      <button type="submit" class="form-button">Відправити</button>
                     </form> 
@@ -117,49 +116,49 @@
             <div class="container">
             <h2 class="hero-titles">Наші переваги</h2>
             <ul class="flex-hero">
-                <li class="flex-container">
-                    <div class="icon-box">
-                        <svg class="icon-svg">
+                <li class="flex-hero__item">
+                    <div class="flex-hero__box">
+                        <svg class="flex-hero__icon">
                             <use href="./images/sprite.svg#icon-antenna-1"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="text">
+                    <h3 class="flex-hero__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="flex-hero__text">
                         Ідейні міркування, і навіть початок повсякденної роботи з
                         формування позиції.
                     </p>
                 </li>
-                <li class="flex-container">
-                    <div class="icon-box">
-                        <svg class="icon-svg">
+                <li class="flex-hero__item">
+                    <div class="flex-hero__box">
+                        <svg class="flex-hero__icon">
                             <use href="./images/sprite.svg#icon-clock-1" ></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="text">
+                    <h3 class="flex-hero__title">ПУНКТУАЛЬНІСТЬ</h3>
+                    <p class="flex-hero__text">
                         Завдання організації, особливо рамки і місце навчання кадрів тягне
                         у себе.
                     </p>
                 </li>
-                <li class="flex-container">
-                    <div class="icon-box">
-                        <svg class="icon-svg">
+                <li class="flex-hero__item">
+                    <div class="flex-hero__box">
+                        <svg class="flex-hero__icon">
                             <use href="./images/sprite.svg#icon-diagram-1"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">ПЛАНУВАННЯ</h3>
-                    <p class="text">
+                    <h3 class="flex-hero__title">ПЛАНУВАННЯ</h3>
+                    <p class="flex-hero__text">
                         Так само консультація з широким активом значною мірою зумовлює.
                     </p>
                 </li>
-                <li class="flex-container">
-                    <div class="icon-box">
-                        <svg class="icon-svg">
+                <li class="flex-hero__item">
+                    <div class="flex-hero__box">
+                        <svg class="flex-hero__icon">
                             <use href="./images/sprite.svg#icon-astronaut-1"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="text">
+                    <h3 class="flex-hero__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p class="flex-hero__text">
                         Значимість цих проблем настільки очевидна, що реалізація планових
                         завдань.
                     </p>
