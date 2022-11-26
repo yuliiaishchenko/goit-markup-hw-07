@@ -6,6 +6,8 @@
 @import'./components.scss/modal';
 @import './components.scss/about';
 @import'./components.scss/team-section';
+@import'./components.scss/client';
+@import'./components.scss/footer';
 
 *,
 *::before,
@@ -33,11 +35,19 @@ footer{
     color: $fon-text-color;
     padding-top: 60px;
     padding-bottom: 60px;}
-
+button {
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);}
+      img {
+  display: block;
+  max-width: 100%;}
+address {
+  font-style: normal;}
 .section { 
-      color: $primary-text-color;
-      padding-top: 94px;
-      padding-bottom: 94px; } 
+  color: $primary-text-color;
+  padding-top: 94px;
+  padding-bottom: 94px; } 
 
 .container {
   @extend %container;
