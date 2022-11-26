@@ -66,4 +66,14 @@
 
 &__links:hover &__icon , 
 &__links:focus &__icon  {fill: $fon-text-color; }      
+
+&__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: center ;
+}
+&__item:not(:first-child) {
+    margin-left: 10px;
+}
+
 }
