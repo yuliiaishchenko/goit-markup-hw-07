@@ -41,6 +41,7 @@
     margin-top: 30px;
 }
 
+
 &__link {
     display: flex;
    font-family: 'Roboto';
@@ -75,14 +76,18 @@
 &__links:focus svg{
     fill: $fon-text-color;
 }
-
+&__title {
+    font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
 
  }
-   .social-list {
-    display: flex;
-    padding-inline-start: 0;
-    width: 44px;
-    height: 44px;}
+ 
 
     .flex-containers {
         display: flex;
@@ -133,9 +138,9 @@ margin-left: auto;
             padding-top: 10px;
             padding-right: 28px;
             padding-bottom: 10px;
-            background-color: #2196F3;
+            background-color: $accent-text-color;
             border-radius: 4px;
-            color: var(--fon-text-color);
+            color: $fon-text-color;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
@@ -150,6 +155,6 @@ margin-left: auto;
         
         &__button:hover,
         &__button:focus {
-            background-color: #188CE8;
+            background-color: $button;
         }    
     }
