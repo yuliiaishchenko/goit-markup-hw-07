@@ -810,7 +810,7 @@ color: #FFFFFF;
     line-height: 1.88;} */
 
 /* fдooter */
-.text-link {
+/* .text-link {
     color: var(--fon-text-color);
     font-size: 14px;
     line-height: 1.71;
@@ -820,7 +820,7 @@ color: #FFFFFF;
     color: var(--fon-text-color-rgba);
     font-size: 14px;
     line-height: 1.71;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)} */
 
     /* .client-list {
         display: flex;
