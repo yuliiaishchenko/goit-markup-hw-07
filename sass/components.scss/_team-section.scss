@@ -2,12 +2,14 @@
 {color: $primary-text-color;
     padding-top: 94px;
     padding-bottom: 94px;
-    background: $box-color}
+    background: $box-color;
+}
 
-.team__list {
+.team-list {
     display: flex;
     flex-wrap: wrap;
     padding-inline-start: 0%;
+
 &__item {
         background-color: $fon-text-color;
         margin-right: 30px;
