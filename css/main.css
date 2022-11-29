@@ -236,6 +236,17 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hero-titles {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .flex-hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,7 +381,9 @@
   background: #FFFFFF;
   cursor: pointer;
 }
-.button-close:hover .icon, .button-close:focus .icon {
+
+.button-close:hover .modal__icon,
+.button-close:focus .modal__icon {
   fill: #2196F3;
 }
 
@@ -385,6 +398,40 @@
 
 .form-hero {
   padding: 40px;
+}
+
+.form-hero__div {
+  position: relative;
+}
+
+.form-hero__input {
+  height: 40px;
+  width: 100%;
+  padding-left: 43px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+}
+.form-hero__input:hover, .form-hero__input:focus {
+  border-color: #2196F3;
+}
+
+.form-hero__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 10px;
+  left: 12px;
+  fill: #212121;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-hero__input:hover + .form-hero__icon,
+.form-hero__input:focus + .form-hero__icon {
+  fill: #2196F3;
 }
 
 .form-hero__group {
@@ -422,6 +469,24 @@
 
 textarea {
   resize: none;
+}
+
+.hero-textarea {
+  width: 100%;
+  height: 132px;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+  color: rgba(117, 117, 117, 0.5);
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-textarea:hover, .hero-textarea:focus {
+  border-color: #2196F3;
 }
 
 .form-button {
@@ -486,6 +551,14 @@ textarea {
   border-radius: 2px;
 }
 
+.hero-checkbox__link {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgb(33, 150, 243);
+  text-decoration: underline;
+}
+
 .hero-checkbox__checkbox {
   width: 16px;
   height: 15px;
@@ -509,6 +582,21 @@ textarea {
   opacity: 0;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-checkbox__input:checked + .hero-checkbox__checkbox {
+  background-color: rgb(33, 150, 243);
+  border: 1px solid rgb(33, 150, 243);
+}
+
+.hero-checkbox__input:checked + .hero-checkbox__checkbox .hero-checkbox__icon {
+  opacity: 1;
+  fill: #FFFFFF;
+}
+
+.hero-checkbox__input:focus + .hero-checkbox__checkbox,
+.hero-checkbox__input:hover + .hero-checkbox__checkbox {
+  border-color: #2196F3;
 }
 
 .about.section {
@@ -593,6 +681,7 @@ textarea {
   -webkit-padding-start: 0%;
           padding-inline-start: 0%;
 }
+
 .team-list__item {
   background-color: #FFFFFF;
   margin-right: 30px;
@@ -603,10 +692,12 @@ textarea {
 .team-list__item:nth-child(4n) {
   margin-right: 0%;
 }
+
 .team-list__box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .team-list__title {
   color: #212121;
   font-weight: 500;
@@ -615,6 +706,7 @@ textarea {
   margin-bottom: 10px;
   text-align: center;
 }
+
 .team-list__text {
   color: #757575;
   font-size: 16px;
@@ -634,6 +726,7 @@ textarea {
           justify-content: center;
   margin-top: 16px;
 }
+
 .team-social-list__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,6 +747,7 @@ textarea {
 .team-social-list__links:hover, .team-social-list__links:focus {
   background-color: #2196F3;
 }
+
 .team-social-list__icon {
   fill: #AFB1B8;
   width: 20px;
@@ -661,9 +755,12 @@ textarea {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-social-list__links:hover .team-social-list__icon, .team-social-list__links:focus .team-social-list__icon {
+
+.team-social-list__links:hover .team-social-list__icon,
+.team-social-list__links:focus .team-social-list__icon {
   fill: #FFFFFF;
 }
+
 .team-social-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,26 +824,6 @@ textarea {
 }
 .client-list__icon:hover, .client-list__icon:focus {
   fill: currentColor;
-}
-
-.logo-footer {
-  display: inline-block;
-  color: #FFFFFF;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.logo-footer:hover, .logo-footer:focus {
-  color: #2196F3;
 }
 
 .footer-address__list {
@@ -930,6 +1007,12 @@ textarea {
   margin-left: 10px;
 }
 
+.footer-form__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer-form__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1025,7 +1108,7 @@ textarea {
   color: #FFFFFF;
 }
 
-li:not(:last-child) {
+.filter-button__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -1051,14 +1134,14 @@ li:not(:last-child) {
       flex-wrap: wrap;
   padding: 0;
 }
-.portfolio-section:nth-child(3n) {
-  margin-right: 0;
-}
 
 .portfolio-section__item {
   width: calc((100% - 60px) / 3);
   margin-bottom: 30px;
   margin-right: 30px;
+}
+.portfolio-section__item:nth-child(3n) {
+  margin-right: 0;
 }
 .portfolio-section__item:nth-last-child(-n+3) {
   margin-bottom: 0;
@@ -1139,6 +1222,43 @@ li:not(:last-child) {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+}
+
+.logo-nav__link {
+  color: #212121;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 94px;
+}
+
+.logo-footer {
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-footer:hover, .logo-footer:focus {
+  color: #2196F3;
+}
+
+.logo-footer__accent {
+  color: #2196F3;
 }
 
 *,
