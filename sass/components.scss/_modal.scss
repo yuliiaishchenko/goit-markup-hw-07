@@ -46,12 +46,12 @@
       border-radius: 50%;
       background: $fon-text-color;
   cursor: pointer;
-  }
+ 
 
-  .button-close:hover .icon,
-.button-close:focus .icon
+&:hover .icon,
+&:focus .icon
 {fill: $accent-text-color;}
-
+}
 .modal__icon {
     color: $modal-svg;
     width: 18px;
@@ -60,13 +60,13 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-hero {
-    padding: 40px;
+    padding: 40px;}
 
 
-&__group {
+.form-hero__group {
     display: block;
     }
-&__label {
+.form-hero__label {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@
     letter-spacing: 0.01em;
     color: $title-text-color;
     }
-&__text {
+.form-hero__text {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -87,7 +87,7 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
     margin-bottom: 12px;
-        }}
+        }
 
 textarea {
     resize: none;
@@ -109,26 +109,26 @@ textarea {
     padding: 10px 52px;
     border-color: transparent;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    
 
-    .form-button:hover,
-.form-button:focus {
+&:hover,
+&:focus {
     background: $button;   
 }
-
+    }
 .hero-checkbox {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;}
 
-&__text {
+.hero-checkbox__text {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
     margin-left: 8px;
     }
-&__input {
+.hero-checkbox__input {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -140,7 +140,7 @@ textarea {
         overflow: hidden;
         border-radius: 2px;
     }
-&__checkbox {
+.hero-checkbox__checkbox {
   
         width: 16px;
         height: 15px;
@@ -149,11 +149,10 @@ textarea {
         border-radius: 2px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }    
-&__icon {
+.hero-checkbox__icon {
             display: block;
             align-items: center;
             justify-content: center;
             opacity: 0;
             transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-}
