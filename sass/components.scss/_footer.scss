@@ -1,19 +1,4 @@
-.logo-footer {
-    display: inline-block;
-    color: $fon-text-color;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:focus {
-        color: $accent-text-color;}
-}
+
 
 .footer-address__list {
        padding-inline-start: 0;} 
@@ -144,7 +129,8 @@ margin-left: auto;}
             fill: $fon-text-color;
           margin-left: 10px;
         }  
-
+        .footer-form__box
+        {display: flex ;} 
 .footer-form__button {
             display: flex;
             justify-content: center;
