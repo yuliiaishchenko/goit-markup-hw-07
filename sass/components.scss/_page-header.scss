@@ -1,7 +1,5 @@
-@import '../utils.scss/variables';
-
 .page-header {
-    border-bottom: 1px solid $header;
+    border-bottom: 1px solid $main-color;
 }
 
 .logo-nav {
@@ -11,6 +9,7 @@
 
 .logo-nav__accent {
     color: $accent-text-color;}
+
 .logo-nav__link { 
     color: $primary-text-color;
     font-family: 'Raleway';
@@ -42,12 +41,12 @@
     margin-right: 50px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-&:hover,
-&:focus {
+.site-nav:hover &,
+.site-nav:focus &{
     color: $accent-text-color;
 }
-
 }
+
 
 
 .current {
@@ -55,10 +54,7 @@
 }
 
 
-.site-nav__link .current::after,
-.site-nav__link .current:focus::after{
-    opacity: 0;
-}
+
 
 .site-nav__link .current::after {
     content: '';
@@ -71,6 +67,13 @@
     left: 0;
     bottom: -33px; 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+
+.site-nav__link .current:hover::after,
+.site-nav__link .current:focus::after{
+        opacity: 0;
+    }
+
 
     .auth-nav__link 
     {    color: $title-text-color;
