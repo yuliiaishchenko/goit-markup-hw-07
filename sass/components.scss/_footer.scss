@@ -9,11 +9,11 @@
     margin-bottom: 20px;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-.logo-footer:hover,
-.logo-footer:focus {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
         color: $accent-text-color;}
-
+}
 
 .footer-address__list {
        padding-inline-start: 0;} 
@@ -33,29 +33,29 @@
 .footer-address__links:focus {
     color: $accent-text-color;}
 
-    .footer-address__link:hover, 
-    .footer-address__link:focus {
+.footer-address__link:hover, 
+.footer-address__link:focus {
  color: $accent-text-color;}
 
  .footer-social {
-    margin-left: 70px; 
+    margin-left: 70px; }
 
 
-&__list {
+.footer-social__list {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
 }
-&__item {
+.footer-social__item {
     display: flex;
     align-items: baseline;
     justify-content: center ;
 }
-&__item:not(:first-child) {
+.footer-social__item:not(:first-child) {
     margin-left: 10px;
 } 
-&__link {
+.footer-social__link {
     display: flex;
    font-family: 'Roboto';
    font-weight: 700;
@@ -66,7 +66,7 @@
    color: $fon-text-color;
    }
 
-   &__links {
+.footer-social__links {
     display: flex;
     background-color: $team-links-color;
     border-radius: 50%;
@@ -74,23 +74,24 @@
     justify-content: center;
     width: 44px;
     height: 44px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &__icon {
+    &:hover,
+    &:focus {
+        background-color: $accent-text-color;}
+
+    &:hover svg,
+    &:focus svg{
+            fill: $fon-text-color;
+}}
+
+.footer-social__icon {
         fill: $fon-text-color;
         width: 20px;
         height: 20px;
       }
 
-      &__links:hover,
-&__links:focus {
-    background-color: $accent-text-color;}
-
-    &__links:hover svg,
-&__links:focus svg{
-    fill: $fon-text-color;
-}
-&__title {
+.footer-social__title {
     font-style: normal;
 font-weight: 700;
 font-size: 14px;
@@ -100,24 +101,24 @@ text-transform: uppercase;
 margin-bottom: 20px;
 }
 
- }
+
  
 
-    .flex-containers {
+.flex-containers {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .footer .container {
+.footer .container {
         display: flex;
         align-items: baseline;
     }
     .footer-form
 {display: flex ;
 flex-direction: column;
-margin-left: auto;
+margin-left: auto;}
   
-&__input {
+.footer-form__input {
     width: 358px;
     height: 50px;
    align-items: center;
@@ -128,7 +129,7 @@ margin-left: auto;
    background-color: $footer-input-color;
    color: $fon-text-color;
 }
-&__title {
+.footer-form__title {
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -137,14 +138,14 @@ margin-left: auto;
         text-transform: uppercase;
         margin-bottom: 20px;
         }
-&__icon {
+.footer-form__icon {
             width: 24px;
             height: 24px;
             fill: $fon-text-color;
           margin-left: 10px;
         }  
 
- &__button {
+.footer-form__button {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -165,10 +166,10 @@ margin-left: auto;
         margin-left: 12px;
         border-color: transparent;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
         
-        &__button:hover,
-        &__button:focus {
+        
+        &:hover,
+        &:focus {
             background-color: $button;
-        }    
-    }
+        }    }
+  
