@@ -46,12 +46,12 @@
       border-radius: 50%;
       background: $fon-text-color;
   cursor: pointer;
- 
-
-&:hover .icon,
-&:focus .icon
-{fill: $accent-text-color;}
 }
+
+  .button-close:hover .modal__icon,
+  .button-close:focus .modal__icon
+{fill: $accent-text-color;}
+
 .modal__icon {
     color: $modal-svg;
     width: 18px;
@@ -61,6 +61,35 @@
 }
 .form-hero {
     padding: 40px;}
+.form-hero__div{
+        position: relative;  
+    }
+.form-hero__input {
+   height: 40px;
+   width: 100%;
+   padding-left: 43px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+&:hover,
+&:focus {
+    border-color: $accent-text-color; }
+ }
+
+ .form-hero__icon{
+ position: absolute;
+ width: 18px;
+ height: 18px;
+ top: 10px;
+ left: 12px;
+ fill: $primary-text-color;
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+ .form-hero__input:hover +.form-hero__icon,
+ .form-hero__input:focus +.form-hero__icon{
+    fill: $accent-text-color;
+ }
 
 
 .form-hero__group {
@@ -92,8 +121,27 @@
 textarea {
     resize: none;
     }
+    .hero-textarea {
+        width: 100%;
+        height: 132px;
+        font-size: 12px;
+        line-height: 1.1666;
+        letter-spacing: 0.01em;
+        padding: 12px 16px;
+        color: $textarea-color;
+        outline: transparent;
+        border: 1px solid $textarea-border;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+    
+    &:hover,
+   &:focus {
+    border-color: $accent-text-color;
+    }}
     .form-button {
-        display: block;
+        display: block; 
         align-items: center;
         justify-content: center;
     font-weight: 700;
@@ -125,7 +173,7 @@ textarea {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: rgba(117, 117, 117, 1);
+    color: $checkbox-text-color;
     margin-left: 8px;
     }
 .hero-checkbox__input {
@@ -140,6 +188,13 @@ textarea {
         overflow: hidden;
         border-radius: 2px;
     }
+.hero-checkbox__link {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;  
+    color: $checkbox-link-color;
+    text-decoration: underline;
+    }
 .hero-checkbox__checkbox {
   
         width: 16px;
@@ -150,9 +205,24 @@ textarea {
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }    
 .hero-checkbox__icon {
-            display: block;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     display: block;
+     align-items: center;
+    justify-content: center;
+     opacity: 0;
+     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+.hero-checkbox__input:checked +.hero-checkbox__checkbox{
+    background-color: $checkbox-link-color;
+    border: 1px solid $checkbox-link-color;
+            }
+            
+.hero-checkbox__input:checked +.hero-checkbox__checkbox .hero-checkbox__icon {
+   opacity: 1;
+    fill: $fon-text-color;
+            }
+            
+            
+.hero-checkbox__input:focus+.hero-checkbox__checkbox,
+.hero-checkbox__input:hover+.hero-checkbox__checkbox {
+   border-color: $accent-text-color;
+            }
