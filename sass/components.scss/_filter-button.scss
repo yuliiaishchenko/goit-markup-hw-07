@@ -50,7 +50,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
     background-color: $accent-text-color;
     color: $fon-text-color;} }
     
-    li:not(:last-child){
+    .filter-button__item:not(:last-child){
         margin-right: 8px;
     }
 
