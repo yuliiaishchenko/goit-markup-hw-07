@@ -1,6 +1,6 @@
+@import './utils.scss/variables.scss';
 @import './components.scss/body';
 @import './components.scss/page-header';
-@import './utils.scss/variables.scss';
 @import './components.scss/hero';
 @import './utils.scss/placeholders';
 @import './components.scss/hero-titles';
@@ -13,7 +13,10 @@
 @import './components.scss/portfolio-components';
 @import './components.scss/logo';
 @import './components.scss/site-nav';
-
+@import './components.scss/auth-nav';
+@import './components.scss/footer-form';
+@import './components.scss/container';
+@import './components.scss/section';
 
 *,
 *::before,
@@ -55,11 +58,3 @@ img {
 address {
   font-style: normal;}
 
-.section { 
-  color: $primary-text-color;
-  padding-top: 94px;
-  padding-bottom: 94px; } 
-
-.container {
-  @extend %container;
-}
