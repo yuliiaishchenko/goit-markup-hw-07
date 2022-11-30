@@ -1,4 +1,4 @@
-g:root{
+/* g:root{
     --primary-text-color: #212121;
     --title-text-color: #757575;
     --accent-text-color: #2196F3;
@@ -8,11 +8,11 @@ g:root{
     --current-color: rgba(175, 177, 184, 1);
 }
 
-/* *,
-*::before,
+/* *, */
+/* *::before,
 *::after {
   box-sizing: border-box;
-} */
+} */ */
 
 /* .body {
     background:  var(--fon-text-color);
@@ -915,11 +915,11 @@ footer{
     
 } */
 
-.social-list {
+/* .social-list {
 display: flex;
 padding-inline-start: 0;
 width: 44px;
-height: 44px;}
+height: 44px;} */
 /* .footer-social-list {
     display: flex;
     align-items: center;
