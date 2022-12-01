@@ -22,15 +22,14 @@
     display: block;
     }
 .about-list__coment {
+    @include flex-center;
         position: absolute;
         height: 70px;
         width: 100%;
         background: $about-color;
         bottom: 0;
         left: 0;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+      
      }
 
 .about-list__text{
