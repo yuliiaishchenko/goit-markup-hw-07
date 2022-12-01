@@ -2,8 +2,8 @@
     display: flex;
     padding: 0;
     &__item:nth-child(3n) {
-        margin-right: 0;
-        &__link{
+        margin-right: 0;}}
+ .site-nav__link{
             display: block;
             position: relative;
             color: $primary-text-color;
@@ -17,8 +17,8 @@
             &:hover,
             &:focus {
                 color: $accent-text-color
-            }
-            &--current {
+            }}
+.current {
                 color: $accent-text-color;
                 &:after {
                     content: '';
@@ -34,6 +34,3 @@
                 }
                 &:hover,&:focus {&:after{opacity: 0}}
             }
-        }
-    }
-}
