@@ -4,15 +4,11 @@
     padding: 0;}
 
 .client-list__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       
+      @include flex-center;       
         color: $social-icon;  
         height: 92px;
         border-radius: 4px;
         border: 1px solid $social-icon;
-    
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 
