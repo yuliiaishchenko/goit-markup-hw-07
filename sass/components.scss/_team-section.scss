@@ -44,17 +44,13 @@
         text-align: center;}
 
 .team-social-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     margin-top: 16px;}
 
 .team-social-list__links {
-        display: flex;
+    @include flex-center;
         background-color: $team-links-color;
         border-radius: 50%;
-        align-items: center;
-        justify-content: center;
         width: 44px;
         height: 44px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
